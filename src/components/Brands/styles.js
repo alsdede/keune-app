@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-
+import { RectButton } from 'react-native-gesture-handler';
 export const Container = styled.View.attrs({
     shadowColor: 'red',
     shadowOffset: {
@@ -7,7 +7,7 @@ export const Container = styled.View.attrs({
         height: 10,
     },
     shadowOpacity: 0.1,
-    elevation: 20,
+    elevation: 0,
 })`
     flex: 1;
     width: 100%;
@@ -40,26 +40,7 @@ export const Capa = styled.Image`
     height: 150px;
 `;
 
-export const Info = styled.View`
-    margin-left: 10px;
-    flex-direction: row;
-`;
-
-export const Name = styled.Text`
-    margin-left: 5px;
-
-    font-size: 20px;
-    color: #333;
-`;
-
-export const Time = styled.Text`
-    color: #000;
-    font-size: 16px;
-    margin-left: 5px;
-`;
-
-export const Date = styled.View`
-    align-items: center;
-    flex-direction: row;
-    margin-right: 10px;
+export const Brand = styled(RectButton)`
+    height: 150px;
+    width: 100%;
 `;

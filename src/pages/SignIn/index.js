@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { Image } from 'react-native';
-import logo from '~/assets/logo.png';
+import logo from '~/assets/logo-login.png';
+import model from '~/assets/produtos.jpg';
 import {
     Container,
     Form,
@@ -15,7 +16,7 @@ export default function SignIn({ navigation }) {
     const passwordRef = useRef();
 
     return (
-        <Background>
+        <Background source={model}>
             <Container>
                 <Image source={logo} />
                 <Form>
@@ -36,9 +37,7 @@ export default function SignIn({ navigation }) {
                         ref={passwordRef}
                         returnKeyType="send"
                     />
-                    <SubmitButton
-                        onPress={() => navigation.navigate('Dashboard')}
-                    >
+                    <SubmitButton onPress={() => navigation.navigate('Home')}>
                         Acessar
                     </SubmitButton>
                 </Form>

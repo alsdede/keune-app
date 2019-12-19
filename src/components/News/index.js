@@ -18,7 +18,8 @@ export default function News() {
             <Left>
                 <Info>
                     <Avatar source={require('~/assets/isaias2.jpg')} />
-                    <Name>Isaias Neves</Name>
+
+                    <Name>Eliane Lucas</Name>
                 </Info>
                 <Date>
                     <Icon name="event-busy" size={20} color="#f64c75" />

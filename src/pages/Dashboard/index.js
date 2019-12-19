@@ -2,17 +2,17 @@ import React from 'react';
 //import { View } from 'react-native';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
-
+import Header from '~/components/Header';
 import { Background } from '~/components/Background';
 import News from '~/components/News';
-import { Container, Title, List } from './styles';
+import { Container, List } from './styles';
 
 const data = [1, 2, 3, 4, 5];
 export default function Dashboard() {
     return (
         <Background>
+            <Header />
             <Container>
-                <Title>Cursos</Title>
                 <List
                     data={data}
                     keyExtractor={item => String(item)}
@@ -24,8 +24,8 @@ export default function Dashboard() {
 }
 
 Dashboard.navigationOptions = {
-    tabBarLabel: 'Home',
+    tabBarLabel: 'Cursos',
     tabBarIcon: ({ tintColor }) => (
-        <Icon name="home" size={20} color={tintColor} />
+        <Icon name="list" size={20} color={tintColor} />
     ),
 };

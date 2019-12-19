@@ -3,61 +3,50 @@ import { RectButton } from 'react-native-gesture-handler';
 
 export const Container = styled.SafeAreaView`
     flex: 1;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    background: #f0f0f0;
+    background: #f0f0fe;
 `;
-export const BrandsList = styled.FlatList.attrs({
-    showVerticalScrollIndicator: true,
-})``;
-export const News = styled(RectButton).attrs({})`
-    margin-top: 5px;
+
+export const ProviderList = styled.FlatList.attrs({
+    showVerticalScrollIndicator: false,
+    numColumns: 2,
+})`
+    margin-top: 20px;
+    padding: 0 20px;
+`;
+
+export const Provider = styled(RectButton).attrs({})`
+    flex: 1;
+    background: #fff;
+    border-radius: 8px;
+    padding: 5px;
     align-items: center;
-    justify-content: center;
+    margin: 0 10px 20px;
     border: 1px solid;
 `;
-export const Current = styled(RectButton).attrs({})`
-    align-items: center;
-    justify-content: center;
-    border: 1px solid;
-`;
-export const Products = styled(RectButton).attrs({})`
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #383838;
-`;
-export const SocialProjects = styled(RectButton).attrs({})`
-    align-items: center;
-    justify-content: center;
-    border: 1px solid;
-`;
+
 export const Avatar = styled.Image`
     height: 100px;
-    width: 250px;
+    width: 110px;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
 `;
 
 export const Info = styled.View.attrs({
-    borderTopWidth: 2,
+    borderTopWidth: 1,
     borderTopColor: 'rgba(255,255,255,0.3)',
     borderBottomWidth: 1,
     borderBottomColor: 'rgba(255,255,255,0.1)',
 })`
     width: 100%;
-    align-items: center;
-    justify-content: center;
 `;
 export const Name = styled.Text`
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin-top: 3px;
-    margin-bottom: 5px;
+    margin-top: 5px;
     margin-left: 2px;
-    font-size: 14px;
+    font-size: 18px;
     color: #383838;
     font-style: italic;
     font-family: 'Roboto';

@@ -6,7 +6,7 @@ export const Container = styled.SafeAreaView`
 
 export const Title = styled.Text`
     font-size: 20px;
-    color: #fff;
+    color: #f0f0;
     font-weight: bold;
     align-self: center;
     margin-top: 30px;
@@ -15,5 +15,8 @@ export const Title = styled.Text`
 
 export const List = styled.FlatList.attrs({
     showVerticalScrollIndicator: false,
-    contentContainerStyle: { padding: 0 },
+    contentContainerStyle: { padding: 5 },
+    borderTopWidth: 0.5,
 })``;
+
+export const LogoTitle = styled.Image``;
